@@ -7,7 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter @Getter
 @Entity
 @Table(name = "persona")
 public class PersonaModel {
@@ -31,148 +34,148 @@ public class PersonaModel {
     @Transient
     private String token;
 
-    public PersonaModel(int id_persona, String nombre, String apellido, String email, String titulo, String telefono, String ubicacion, String acercade, String url_img_perfil, String url_img_fondo, String username, String password) {
-        this.id_persona = id_persona;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.titulo = titulo;
-        this.telefono = telefono;
-        this.ubicacion = ubicacion;
-        this.acercade = acercade;
-        this.url_img_perfil = url_img_perfil;
-        this.url_img_fondo = url_img_fondo;
-        this.username = username;
-        this.password = password;
-    }
+    // public PersonaModel(int id_persona, String nombre, String apellido, String email, String titulo, String telefono, String ubicacion, String acercade, String url_img_perfil, String url_img_fondo, String username, String password) {
+    //     this.id_persona = id_persona;
+    //     this.nombre = nombre;
+    //     this.apellido = apellido;
+    //     this.email = email;
+    //     this.titulo = titulo;
+    //     this.telefono = telefono;
+    //     this.ubicacion = ubicacion;
+    //     this.acercade = acercade;
+    //     this.url_img_perfil = url_img_perfil;
+    //     this.url_img_fondo = url_img_fondo;
+    //     this.username = username;
+    //     this.password = password;
+    // }
 
-    public PersonaModel(String nombre, String apellido, String email, String titulo, String telefono, String ubicacion, String acercade, String url_img_perfil, String url_img_fondo, String username, String password) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.titulo = titulo;
-        this.telefono = telefono;
-        this.ubicacion = ubicacion;
-        this.acercade = acercade;
-        this.url_img_perfil = url_img_perfil;
-        this.url_img_fondo = url_img_fondo;
-        this.username = username;
-        this.password = password;
-    }
+    // public PersonaModel(String nombre, String apellido, String email, String titulo, String telefono, String ubicacion, String acercade, String url_img_perfil, String url_img_fondo, String username, String password) {
+    //     this.nombre = nombre;
+    //     this.apellido = apellido;
+    //     this.email = email;
+    //     this.titulo = titulo;
+    //     this.telefono = telefono;
+    //     this.ubicacion = ubicacion;
+    //     this.acercade = acercade;
+    //     this.url_img_perfil = url_img_perfil;
+    //     this.url_img_fondo = url_img_fondo;
+    //     this.username = username;
+    //     this.password = password;
+    // }
 
-    public PersonaModel() {
+    // public PersonaModel() {
         
-    }
+    // }
 
-    public int getIdpersona() {
-        return id_persona;
-    }
+    // public int getIdpersona() {
+    //     return id_persona;
+    // }
 
-    public void setIdpersona(int id_persona) {
-        this.id_persona = id_persona;
-    }
+    // public void setIdpersona(int id_persona) {
+    //     this.id_persona = id_persona;
+    // }
 
-    public String getNombre() {
-        return nombre;
-    }
+    // public String getNombre() {
+    //     return nombre;
+    // }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    // public void setNombre(String nombre) {
+    //     this.nombre = nombre;
+    // }
 
-    public String getApellido() {
-        return apellido;
-    }
+    // public String getApellido() {
+    //     return apellido;
+    // }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
+    // public void setApellido(String apellido) {
+    //     this.apellido = apellido;
+    // }
 
-    public String getEmail() {
-        return email;
-    }
+    // public String getEmail() {
+    //     return email;
+    // }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    // public void setEmail(String email) {
+    //     this.email = email;
+    // }
 
-    public String getTitulo() {
-        return titulo;
-    }
+    // public String getTitulo() {
+    //     return titulo;
+    // }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
+    // public void setTitulo(String titulo) {
+    //     this.titulo = titulo;
+    // }
 
-    public String getTelefono() {
-        return telefono;
-    }
+    // public String getTelefono() {
+    //     return telefono;
+    // }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
+    // public void setTelefono(String telefono) {
+    //     this.telefono = telefono;
+    // }
 
-    public String getUbicacion() {
-        return ubicacion;
-    }
+    // public String getUbicacion() {
+    //     return ubicacion;
+    // }
 
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
-    }
+    // public void setUbicacion(String ubicacion) {
+    //     this.ubicacion = ubicacion;
+    // }
 
-    public String getAcerca() {
-        return acercade;
-    }
+    // public String getAcerca() {
+    //     return acercade;
+    // }
 
-    public void setAcerca(String acercade) {
-        this.acercade = acercade;
-    }
+    // public void setAcerca(String acercade) {
+    //     this.acercade = acercade;
+    // }
 
-    public String getFotourl() {
-        return url_img_perfil;
-    }
+    // public String getFotourl() {
+    //     return url_img_perfil;
+    // }
 
-    public void setFotourl(String url_img_perfil) {
-        this.url_img_perfil = url_img_perfil;
-    }
+    // public void setFotourl(String url_img_perfil) {
+    //     this.url_img_perfil = url_img_perfil;
+    // }
 
-    public String getCoverurl() {
-        return url_img_fondo;
-    }
+    // public String getCoverurl() {
+    //     return url_img_fondo;
+    // }
 
-    public void setCoverurl(String url_img_perfil) {
-        this.url_img_fondo = url_img_perfil;
-    }
+    // public void setCoverurl(String url_img_perfil) {
+    //     this.url_img_fondo = url_img_perfil;
+    // }
 
-    public String getUsername() {
-        return username;
-    }
+    // public String getUsername() {
+    //     return username;
+    // }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    // public void setUsername(String username) {
+    //     this.username = username;
+    // }
 
-    public String getPassword() {
-        return password;
-    }
+    // public String getPassword() {
+    //     return password;
+    // }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    // public void setPassword(String password) {
+    //     this.password = password;
+    // }
 
-    public String getToken() {
-        return token;
-    }
+    // public String getToken() {
+    //     return token;
+    // }
 
-    public void setToken(String token) {
-        this.token = token;
-    }
+    // public void setToken(String token) {
+    //     this.token = token;
+    // }
 
 
-    @Override
-    public String toString() {
-        return "PersonaModel{" + "id_persona=" + id_persona + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", titulo=" + titulo + ", telefono=" + telefono + ", ubicacion=" + ubicacion + ", acercade=" + acercade + ", url_img_perfil=" + url_img_perfil + ", username=" + username + ", password=" + password + '}';
-    }
+    // @Override
+    // public String toString() {
+    //     return "PersonaModel{" + "id_persona=" + id_persona + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", titulo=" + titulo + ", telefono=" + telefono + ", ubicacion=" + ubicacion + ", acercade=" + acercade + ", url_img_perfil=" + url_img_perfil + ", username=" + username + ", password=" + password + '}';
+    // }
 
     
 

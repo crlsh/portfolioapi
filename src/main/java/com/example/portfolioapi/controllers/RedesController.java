@@ -43,7 +43,7 @@ public class RedesController {
 
     @PutMapping("/{id}")
     public ResponseEntity<RedesModel> update(@PathVariable(value = "id") int id, @Validated @RequestBody RedesModel red) {
-        if (id == red.getIdred()) {
+        if (id == red.getId_red()) {
             RedesModel redNew = redService.save(red);
             return ResponseEntity.ok().body(redNew);
         } else {

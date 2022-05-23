@@ -44,7 +44,7 @@ public class PersonaController {
     @PutMapping("/{id}")
     public ResponseEntity<PersonaModel> update(@PathVariable(value = "id") int id,
             @Validated @RequestBody PersonaModel persona) {
-        if (id == persona.getIdpersona()) {
+        if (id == persona.getId_persona()) {
             PersonaModel personaNew = personaService.save(persona);
             return ResponseEntity.ok().body(personaNew);
         } else {
@@ -52,10 +52,7 @@ public class PersonaController {
         }
     }
 
-    //@DeleteMapping("/{id}")
-    //public void delete(@PathVariable int id) {
-    //    PersonaService.delete(id);
-    //}
+
     @DeleteMapping("/{id}")
     public ResponseEntity<PersonaModel> delete(@PathVariable int id) {
         boolean ok = personaService.delete(id);
