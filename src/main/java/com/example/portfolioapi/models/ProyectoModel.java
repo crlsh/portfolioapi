@@ -9,6 +9,11 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+
+
+
+
+
 @Setter @Getter
 @Entity
 @Table(name = "proyectos")
@@ -19,20 +24,22 @@ public class ProyectoModel {
  
     public int id_proyecto;
 
-    //@Basic
+   
     private String nombre;
     private String descripcion;
-    
     private String url_proyecto;
     private String url_imagen;
     private int id_persona;
 
 
-    public ProyectoModel() {
-    }
 
 
-    // public ProyectoModel(int id_proyecto, String nombre, String descripcion, String url_proyecto, String url_imagen,int id_persona) {
+    // public ProyectoModel(int id_proyecto, 
+    //                     String nombre, 
+    //                     String descripcion, 
+    //                     String url_proyecto, 
+    //                     String url_imagen,
+    //                     int id_persona) {
     //     this.id_proyecto = id_proyecto;
     //     this.nombre = nombre;
     //     this.descripcion = descripcion;
@@ -42,7 +49,11 @@ public class ProyectoModel {
     // }
 
 
-    // public ProyectoModel(String nombre, String descripcion, String url_proyecto, String url_imagen,int id_persona) {
+    // public ProyectoModel(String nombre, 
+    //                     String descripcion, 
+    //                     String url_proyecto, 
+    //                     String url_imagen,
+    //                     int id_persona) {
     //     this.nombre = nombre;
     //     this.descripcion = descripcion;
     //     this.url_proyecto = url_proyecto;
@@ -50,11 +61,11 @@ public class ProyectoModel {
     //     this.id_persona = id_persona;
     // }
 
-    // public int getIdproyecto() {
+    // public int getId_proyecto() {
     //     return id_proyecto;
     // }
 
-    // public void setIdproyecto(int id_proyecto) {
+    // public void setId_proyecto(int id_proyecto) {
     //     this.id_proyecto = id_proyecto;
     // }
 
@@ -90,17 +101,22 @@ public class ProyectoModel {
     //     this.url_imagen = url_imagen;
     // }
 
-    // public int getPersona() {
+    // public int getId_persona() {
     //     return id_persona;
     // }
 
-    // public void setPersona(int id_persona) {
+    // public void setId_persona(int id_persona) {
     //     this.id_persona = id_persona;
     // }
 
     // @Override
     // public String toString() {
-    //     return "ProyectoModel{" + "id_proyecto=" + id_proyecto + ", nombre=" + nombre + ", descripcion=" + descripcion + ", url_proyecto=" + url_proyecto + ", url_imagen=" + url_imagen + ", id_persona=" + id_persona + '}';
+    //     return "ProyectoModel{" + "id_proyecto=" + id_proyecto + 
+    //                             ", nombre=" + nombre +
+    //                             ", descripcion=" + descripcion + 
+    //                             ", url_proyecto=" + url_proyecto +
+    //                             ", url_imagen=" + url_imagen + 
+    //                             ", id_persona=" + id_persona + '}';
     // }
     
 }
