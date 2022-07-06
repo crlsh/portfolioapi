@@ -19,7 +19,7 @@ Frontend:  Angular 13 alojado en firebase
 
 ## Screenshot
 
-![Screenshot](https://i.ibb.co/DMyBBxN/DER.jpg)
+![ER](https://i.ibb.co/DMyBBxN/DER.jpg)
 
 
 
