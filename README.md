@@ -17,7 +17,7 @@ API:  Java Springboot alojada en heroku
 Frontend:  Angular 13 alojado en firebase
 
 
-## Screenshot
+## DER
 
 ![ER](https://i.ibb.co/DMyBBxN/DER.jpg)
 
